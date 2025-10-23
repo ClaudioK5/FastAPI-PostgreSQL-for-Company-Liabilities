@@ -4,7 +4,7 @@ from database import Base
 from datetime import datetime
 
 class LiabilityItem(Base):
-    __tablename__ = "inventory"
+    __tablename__ = "liabilities"
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
@@ -12,3 +12,4 @@ class LiabilityItem(Base):
     due_date = Column(String)
     category = Column(String)
     is_paid = Column(Boolean, default=False)
+
